@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PP - Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./alertas.css">
+</head>
+<body>
+    <main class="m-2">
+        <header>
+            <h1>Inicio</h1>
+            <h3>PP - 331-2 - Programación III - 2024</h3>
+        </header>
+
+        <nav id="panel-izquierda">
+            <a href="./index.html">Inicio</a>
+            <a href="./guardados.html">Guardados</a>
+
+            <section id="principal">
+                <!-- Aquí se deben mostrar los puestos -->
+                </div>
+                <hr/>
+                <input type="text" id="traer-puesto">
+                <br>
+                <button id="bt-traer-puesto">Buscar</button>
+                <button id="btnDescargarPDF">Descargar PDF</button>
+                <h5>Ultimo puesto buscado</h5>
+                <div id="busqueda"></div>
+                <div id="ultimoPuestoGuardado"></div>
+            </section>            
+        </nav>
+
+        <div id="principal" class="m-2">
+            <h1>Principal</h1>
+            <div>
+                <button id="btnAnterior">anterior</button>
+                <button id="btnSiguiente">siguiente</button>
+            </div>
+            <div id="puestos"></div>
+        </div>
+    </main>
+
+    <script type="module" src="./puesto.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
